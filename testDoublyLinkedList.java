@@ -1,6 +1,3 @@
-/**
- * testSinglyLinkedList
- */
 public class testDoublyLinkedList {
 
     public static void main(String[] args) {
