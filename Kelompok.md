@@ -1,5 +1,4 @@
 # Proyek 1 ASD
-Kelas : 
-1. Nama Mhs 1, NIM Mhs 1
-2. Nama Mhs 2, NIM Mhs 2
-2. Nama Mhs 3, NIM Mhs 3
+Kelas : TIF-A
+1. Yeriel Dionisius Fuhensen, 255150200111039
+2. Ravina Natasha Trimaharani, 255150219111004
