@@ -1,41 +1,40 @@
-public class DoublyLinkedList implements LinkedList{
-    private Node2P head,tail;
-    int size=0;
+public class DoublyLinkedList implements LinkedList {
+    private Node2P head, tail;
+    int size = 0;
 
-    public DoublyLinkedList(){
+    public DoublyLinkedList() {
         head = tail = null;
     }
 
-    public boolean isEmpty(){
-        return(size==0);
+    public boolean isEmpty() {
+        return (size == 0);
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
-    public void addFirst(Object inputData){
+    public void addFirst(Object inputData) {
         Node2P baru = new Node2P(inputData);
-        if (isEmpty()){
+        if (isEmpty()) {
             head = baru;
             tail = baru;
             size++;
-        }
-        else{
+        } else {
             baru.next = head;
             head.prev = baru;
             head = baru;
             size++;
         }
     }
-    public void addLast(Object inputData){
+
+    public void addLast(Object inputData) {
         Node2P baru = new Node2P(inputData);
-        if (isEmpty()){
+        if (isEmpty()) {
             head = baru;
             tail = baru;
             size++;
-        }
-        else{
+        } else {
             tail.next = baru;
             baru.prev = tail;
             tail = baru;
@@ -43,78 +42,87 @@ public class DoublyLinkedList implements LinkedList{
         }
     }
 
-    public void addAfter(int index,Object inputData){
+    public void addAfter(int index, Object inputData) {
+        if (index < 0 || index >= size) {
+            System.out.println("Index di luar batas list!");
+            return;
+        }
+
+        if (index == size - 1) {
+            addLast(inputData);
+            return;
+        }
+
         Node2P baru = new Node2P(inputData);
-        if (isEmpty()){
-            head = baru;
-            tail = baru;
-            size++;
+        Node2P temp = head;
+        for (int i = 0; i < index; i++) {
+            temp = temp.next;
         }
-        else{
+
+        baru.prev = temp;
+        baru.next = temp.next;
+        temp.next.prev = baru;
+        temp.next = baru;
+        size++;
+    }
+
+    public void deleteFirst() {
+        if (!isEmpty()) {
             Node2P temp = head;
-            for(int i=0;i<index;i++){
-                temp = temp.next;
-            }
-            baru.prev = temp;
-            baru.next = temp.next;
-            temp.next = baru;
-            baru.next.prev = baru;
-            size++;
-        }
-    }
-    
-    public void deleteFirst(){
-        Node2P temp = head;
-        if (!isEmpty()){ 
-            if (head == tail)
+            if (head == tail) {
                 head = tail = null;
-            else
-            {
-                head.next.prev = null;
-                head = temp.next;
-            } size--;
-        }
-        else
+            } else {
+                head = head.next;
+                head.prev = null;
+                temp.next = null;
+            }
+            size--;
+        } else {
             System.out.println("List kosong!");
-    }
-
-    public void deleteLast(){
-        Node2P temp = tail;
-        if (!isEmpty()){
-            if (tail == head){
-                head = tail = null;
-            }
-            else {
-                tail.prev.next = null;
-                tail=temp.prev;
-            } size--;
         }
-        else System.out.println("List kosong!");
-
     }
-    public void deleteAfter(int index){
-        Node2P temp = head;
-        if(index < size-2){
-            for(int i=0;i<index;i++){
+
+    public void deleteLast() {
+        if (!isEmpty()) {
+            Node2P temp = tail;
+            if (tail == head) {
+                head = tail = null;
+            } else {
+                tail = tail.prev;
+                tail.next = null;
+                temp.prev = null; // Memutus referensi garbage collector
+            }
+            size--;
+        } else {
+            System.out.println("List kosong!");
+        }
+    }
+
+    public void deleteAfter(int index) {
+        if (index < 0 || index >= size - 1) {
+            System.out.println("Index tidak valid atau tidak ada elemen setelah index tersebut");
+            return;
+        }
+
+        if (index == size - 2) {
+            this.deleteLast();
+        } else {
+            Node2P temp = head;
+            for (int i = 0; i < index; i++) {
                 temp = temp.next;
             }
-            temp.next.next.prev = temp;
-            temp.next = temp.next.next;
+            Node2P nodeToDelete = temp.next;
+            temp.next = nodeToDelete.next;
+            nodeToDelete.next.prev = temp;
+            nodeToDelete.next = null;
+            nodeToDelete.prev = null;
             size--;
         }
-        else if(index==size-2){//menghapus tail
-            this.deleteLast();
-        }
-        else{
-            System.out.println("Index lebih besar atau sama dari ukuran list");
-        }
-
     }
 
-
-    public void print(){
+    public void print() {
         Node2P currentNode = head;
-        for(int i =0;i<size;i++){
+        for (int i = 0; i < size; i++) {
             System.out.println(currentNode.data);
             currentNode = currentNode.next;
         }
@@ -131,6 +139,7 @@ public class DoublyLinkedList implements LinkedList{
         }
         return current.data;
     }
+
     @Override
     public int indexOf(Object targetData) {
         Node2P current = head;
@@ -145,6 +154,7 @@ public class DoublyLinkedList implements LinkedList{
         }
         return -1;
     }
+
     @Override
     public void printReverse() {
         Node2P currentNode = tail;
@@ -153,6 +163,7 @@ public class DoublyLinkedList implements LinkedList{
             currentNode = currentNode.prev;
         }
     }
+
     @Override
     public boolean remove(Object targetData) {
         if (isEmpty()) {
@@ -171,6 +182,8 @@ public class DoublyLinkedList implements LinkedList{
                 } else {
                     current.prev.next = current.next;
                     current.next.prev = current.prev;
+                    current.next = null;
+                    current.prev = null;
                     size--;
                 }
                 return true;
@@ -179,6 +192,7 @@ public class DoublyLinkedList implements LinkedList{
         }
         return false;
     }
+
     @Override
     public Object[] toArray() {
         Object[] array = new Object[size];

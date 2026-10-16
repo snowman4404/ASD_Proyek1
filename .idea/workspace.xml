@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="255c6a23-172d-43a5-9968-0bed4218d2c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/asd_tif_2026.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoublyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DoublyLinkedList.java" afterDir="false" />
+    <list default="true" id="03507587-7ef8-49f6-9791-df6c33f9510b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,49 +13,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 8
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="3KhuKBDl8L3W3KCXmtlELQM3WNa" />
+  <component name="ProjectId" id="3Kkjv4lRMv3Vstm0tCyXUqFMMfO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.testDoublyLinkedList.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.testDoublyLinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;Application.testSinglyLinkedList.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/yerie/Documents/Tugas Kuliah/Semester 3/ASD/Proyek 1/asd_tif_2026/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\yerie\Documents\Tugas Kuliah\Semester 3\ASD\Proyek 1\asd_tif_2026\.idea\SLL" />
-      <recent name="C:\Users\yerie\Documents\Tugas Kuliah\Semester 3\ASD\Proyek 1\asd_tif_2026\.idea\DLL" />
+      <recent name="C:\Users\yerie\Documents\Tugas Kuliah\Semester 3\ASD\Proyek 1\asd_tif_2026\src" />
+      <recent name="C:\Users\yerie\Documents\Tugas Kuliah\Semester 3\ASD\Proyek 1\asd_tif_2026\DLL" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="testDoublyLinkedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testDoublyLinkedList" />
-      <module name="asd_tif_2026" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.testDoublyLinkedList" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -71,13 +56,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="255c6a23-172d-43a5-9968-0bed4218d2c5" name="Changes" comment="" />
-      <created>1792022055237</created>
+      <changelist id="03507587-7ef8-49f6-9791-df6c33f9510b" name="Changes" comment="" />
+      <created>1792108689280</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1792022055237</updated>
-      <workItem from="1792022056255" duration="1112000" />
-      <workItem from="1792093728109" duration="1055000" />
+      <updated>1792108689280</updated>
+      <workItem from="1792108690593" duration="25000" />
+      <workItem from="1792108724762" duration="14000" />
+      <workItem from="1792108749667" duration="142000" />
+      <workItem from="1792108902102" duration="689000" />
     </task>
     <servers />
   </component>
