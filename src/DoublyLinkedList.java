@@ -159,9 +159,13 @@ public class DoublyLinkedList implements LinkedList {
     public void printReverse() {
         Node2P currentNode = tail;
         while (currentNode != null) {
-            System.out.println(currentNode.data);
+            System.out.print(currentNode.data);
+            if (currentNode.prev != null) {
+                System.out.print(", ");
+            }
             currentNode = currentNode.prev;
         }
+        System.out.println();
     }
 
     @Override
