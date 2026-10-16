@@ -122,10 +122,11 @@ public class SinglyLinkedList implements LinkedList{
             currentNode = currentNode.pointer;
         }
     }
+
     @Override
     public Object get(int index) {
         if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            return null;
         }
         Node current = head;
         for (int i = 0; i < index; i++) {

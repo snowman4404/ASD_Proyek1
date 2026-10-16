@@ -9,11 +9,7 @@ public class testSinglyLinkedList {
         linkedList.addFirst(5);
         linkedList.addFirst(6);
         System.out.println(linkedList.get(2));      // menghasilkan nilai 4
-        try {
-            System.out.println(linkedList.get(12)); // Terjadi exception error
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Index tidak valid");
-        }
+        System.out.println(linkedList.get(12)); // Terjadi exception error
         System.out.println(linkedList.indexOf(4));// menghasilkan 5
         System.out.println(linkedList.indexOf(10));// menghasilkan -1
         linkedList.printReverse(); // Menghasilkan 6,5,4,3,2,1
