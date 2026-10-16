@@ -1,6 +1,4 @@
-/**
- * LinkedList
- */
+
 interface LinkedList {
     boolean isEmpty();
     int size();
